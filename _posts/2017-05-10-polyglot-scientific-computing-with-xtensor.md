@@ -215,7 +215,7 @@ But we can go further. We can now expose `logsumexp` to Julia with very little a
 #include "fast_lse/logsumexp.hpp"
 
 using array_type = xt::jlarray<double>;
-using axes_type = cxx_wrap::ArrayRef<std::size_t>
+using axes_type = cxx_wrap::ArrayRef<int_t>
 
 array_type julia_logsumexp(array_type a, axes_type axes)
 {
